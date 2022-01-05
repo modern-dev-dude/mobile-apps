@@ -1,0 +1,15 @@
+D:\projects\mobile-apps\calc-rpn\calc-rpn\calc-rpn\bin\Debug\netstandard2.0\calc-rpn.deps.json
+D:\projects\mobile-apps\calc-rpn\calc-rpn\calc-rpn\bin\Debug\netstandard2.0\calc-rpn.dll
+D:\projects\mobile-apps\calc-rpn\calc-rpn\calc-rpn\bin\Debug\netstandard2.0\ref\calc-rpn.dll
+D:\projects\mobile-apps\calc-rpn\calc-rpn\calc-rpn\bin\Debug\netstandard2.0\calc-rpn.pdb
+D:\projects\mobile-apps\calc-rpn\calc-rpn\calc-rpn\obj\Debug\netstandard2.0\calc-rpn.csproj.AssemblyReference.cache
+D:\projects\mobile-apps\calc-rpn\calc-rpn\calc-rpn\obj\Debug\netstandard2.0\calc-rpn.GeneratedMSBuildEditorConfig.editorconfig
+D:\projects\mobile-apps\calc-rpn\calc-rpn\calc-rpn\obj\Debug\netstandard2.0\App.xaml.g.cs
+D:\projects\mobile-apps\calc-rpn\calc-rpn\calc-rpn\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+D:\projects\mobile-apps\calc-rpn\calc-rpn\calc-rpn\obj\Debug\netstandard2.0\calc-rpn.AssemblyInfoInputs.cache
+D:\projects\mobile-apps\calc-rpn\calc-rpn\calc-rpn\obj\Debug\netstandard2.0\calc-rpn.AssemblyInfo.cs
+D:\projects\mobile-apps\calc-rpn\calc-rpn\calc-rpn\obj\Debug\netstandard2.0\calc-rpn.csproj.CoreCompileInputs.cache
+D:\projects\mobile-apps\calc-rpn\calc-rpn\calc-rpn\obj\Debug\netstandard2.0\XamlC.stamp
+D:\projects\mobile-apps\calc-rpn\calc-rpn\calc-rpn\obj\Debug\netstandard2.0\calc-rpn.dll
+D:\projects\mobile-apps\calc-rpn\calc-rpn\calc-rpn\obj\Debug\netstandard2.0\ref\calc-rpn.dll
+D:\projects\mobile-apps\calc-rpn\calc-rpn\calc-rpn\obj\Debug\netstandard2.0\calc-rpn.pdb

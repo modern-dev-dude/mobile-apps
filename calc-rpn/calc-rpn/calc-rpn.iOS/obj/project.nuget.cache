@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "HiiBKmQ/nGl10ZPyGTWqueo7ZWI/p5eHanlNVR8Tv9WrocwZhf/wk29x1PVDqlBjd6G78UIBRCHWwlPgusI2lw==",
+  "success": true,
+  "projectFilePath": "D:\\projects\\mobile-apps\\calc-rpn\\calc-rpn\\calc-rpn.iOS\\calc-rpn.iOS.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\jstod\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\jstod\\.nuget\\packages\\xamarin.essentials\\1.7.0\\xamarin.essentials.1.7.0.nupkg.sha512",
+    "C:\\Users\\jstod\\.nuget\\packages\\xamarin.forms\\5.0.0.2196\\xamarin.forms.5.0.0.2196.nupkg.sha512"
+  ],
+  "logs": []
+}
