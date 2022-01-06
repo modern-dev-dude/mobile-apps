@@ -1,58 +1,53 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Xamarin.Forms;
+using System.Collections;
 
 namespace calc_rpn
 {
     public partial class MainPage : ContentPage
     {
-        Entry phoneNumberText;
-        Button numOneBtn;
-        Button numTwoBtn;
-        Button callButton;
-        int[] rpnArray= new int[] {};
-        String eventString;
+        Stack rpnNumStack = new Stack();
+
         public MainPage()
         {
             InitializeComponent();
             this.Padding = new Thickness(20, 20, 20, 20);
 
+
             StackLayout panel = new StackLayout
             {
                 Spacing = 15
             };
-            StackLayout btnGrid = new StackLayout
-            {
-                Orientation = StackOrientation.Horizontal,
-                Spacing =5,
-            };
+            Grid btnGrid = new Grid();
+
             // Build Btn Grid
-            for(int i = 1; i < 4; i++)
-            {
-               
+            int rowCount = 0;
+            int colCount = 0;
+            for (int i = 1; i < 10; i++)
+             {
+                 btnGrid.ColumnDefinitions.Add(new ColumnDefinition { Width =  75, });
                 Button BtnToCreate = new Button
                 {
                     Text = i.ToString(),
-                    
                 };
                 BtnToCreate.Clicked += AddItemToStack;
+                BtnToCreate.SetValue(Grid.ColumnProperty, colCount);
+                BtnToCreate.SetValue(Grid.RowProperty, rowCount);
                 btnGrid.Children.Add(BtnToCreate);
-         }
-            
-            
-            
+                // increment row every 3 buttons and reset the col
+                colCount++;
+                if (i % 3 == 0)
+                {
+                    rowCount++;
+                    colCount = 0;
+                }
+             }
 
-
-
-
+            int textVAl = rpnNumStack.Count;
             panel.Children.Add(btnGrid);
-            panel.Children.Add(phoneNumberText = new Entry
+            panel.Children.Add(new Entry
             {
-                Text = "1-855-XAMARIN",
+                Text = textVAl.ToString(),
             });
 
             this.Content = panel;
@@ -60,7 +55,8 @@ namespace calc_rpn
 
 
         private void AddItemToStack(object sender, EventArgs e) {
-            phoneNumberText.Text = (sender as Button).Text;
+            string btnVal = (sender as Button).Text;
+            rpnNumStack.Push('1');
             return;
         }
     }
