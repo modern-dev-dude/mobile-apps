@@ -7,24 +7,22 @@ namespace calc_rpn
     public partial class MainPage : ContentPage
     {
         Stack rpnNumStack = new Stack();
-
+        Entry textVAl;
+       
         public MainPage()
         {
             InitializeComponent();
+
             this.Padding = new Thickness(20, 20, 20, 20);
 
-
-            StackLayout panel = new StackLayout
-            {
-                Spacing = 15
-            };
+           
             Grid btnGrid = new Grid();
 
             // Build Btn Grid
             int rowCount = 0;
             int colCount = 0;
             for (int i = 1; i < 10; i++)
-             {
+            {
                  btnGrid.ColumnDefinitions.Add(new ColumnDefinition { Width =  75, });
                 Button BtnToCreate = new Button
                 {
@@ -41,22 +39,21 @@ namespace calc_rpn
                     rowCount++;
                     colCount = 0;
                 }
-             }
+            }
 
-            int textVAl = rpnNumStack.Count;
-            panel.Children.Add(btnGrid);
-            panel.Children.Add(new Entry
+            this.panel.Children.Add(btnGrid);
+            // to test stack count to ensure it is loading properly
+            this.panel.Children.Add(textVAl = new Entry
             {
-                Text = textVAl.ToString(),
+                Text = rpnNumStack.Count.ToString(),
             });
 
-            this.Content = panel;
         }
-
 
         private void AddItemToStack(object sender, EventArgs e) {
             string btnVal = (sender as Button).Text;
             rpnNumStack.Push('1');
+            textVAl.Text = rpnNumStack.Count.ToString();
             return;
         }
     }
