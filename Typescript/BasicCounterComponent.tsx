@@ -22,7 +22,8 @@ export default function CounterBtnExe(){
     <div>
       <h1>Count is {count}</h1>
       <br/>
-      <button onClick={handleClick('UP')}></button>
+      <button onClick={handleClick('UP')}>Count up</button>
+      <button onClick={handleClick('DOWN')}>Count down</button>
     </div>
   )
 }
